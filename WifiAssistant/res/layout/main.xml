@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 设置topbar格式 -->
+
+    <RelativeLayout
+        android:id="@+id/title_ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/home_title_layout" />
+    </RelativeLayout>
+
+    <!-- 设置一键连接按钮 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/gps"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:text="当前位置"
+            android:textColor="@android:color/secondary_text_light"
+            android:background="@drawable/default_pic" />
+
+        <!--  <include layout="@layout/home_wifistatus_layout" /> -->
+    </RelativeLayout>
+
+    <!-- 免费连接WiFi -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#b3000d" >
+
+        <TextView
+            android:id="@+id/freeWifi"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"    
+            android:gravity="center_vertical|left"
+            android:text="免费WiFi"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+    </RelativeLayout>
+    <!-- 非免费连接WiFi -->
+
+     
+        <ListView
+            android:id="@+id/wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </ListView>
+    
+</LinearLayout>

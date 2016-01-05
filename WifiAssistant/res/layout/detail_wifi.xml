@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- topbar格式 -->
+
+    <RelativeLayout
+        android:id="@+id/titile_layout_ry"
+        android:layout_width="fill_parent"
+        android:layout_height="43dip"
+        android:background="@drawable/top_bar_bg" >
+
+        <!-- 返回按钮 -->
+
+        <ImageButton
+            android:id="@+id/detail_wifi_back_arrow"
+            android:layout_width="8dip"
+            android:layout_height="16dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/back_arrow" />
+
+        <!-- wifi名称 -->
+
+        <TextView
+            android:id="@+id/detail_wifi_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="wifiname"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- wifi详情 -->
+
+    <RelativeLayout
+        android:id="@+id/wifi_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:background="@drawable/wifi_layout" >
+
+        <!-- wifi信号 -->
+
+        <TextView
+            android:id="@+id/signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="30%"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+        <!-- 连接人次 -->
+
+        <TextView
+            android:id="@+id/connect_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dip"
+            android:text="666"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="30dip" />
+
+        <!-- 小字注释 -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/signal"
+            android:layout_marginLeft="20dp"
+            android:text="信号大于60%时易连接"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="12dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/connect_number"
+            android:layout_below="@+id/connect_number"
+            android:layout_marginRight="50dp"
+            android:text="累计连接人次"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <!-- 加密方式 -->
+
+    <RelativeLayout
+        android:id="@+id/encryption_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/wifi_layout"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/wifi_row_layout"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="加密方式"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/encryption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:text="WPA/WPA2"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15dip" />
+
+    </RelativeLayout>
+
+    <!-- Mac地址 -->
+
+    <RelativeLayout
+        android:id="@+id/mac_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/encryption_layout"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/wifi_row_layout"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="MAC地址"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:text="74:44:01:41:35:be"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dip"
+        android:layout_below="@+id/mac_layout"
+        android:layout_marginTop="30dip"
+        android:clickable="true" >
+
+        <!-- 连接按钮 -->
+
+        <ImageButton
+            android:id="@+id/connect"
+            android:layout_width="212dip"
+            android:layout_height="41dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/connect_bn_style" />
+         
+         
+    </RelativeLayout>
+
+   <!-- 连接状态 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/connect_state"
+            android:layout_below="@+id/connect"
+            android:layout_marginRight="50dp"
+            android:text="连接状态"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="12dip" />
+
+
+</LinearLayout>

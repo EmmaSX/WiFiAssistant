@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="43dip"
+    android:background="@drawable/top_bar_bg"
+    android:id="@+id/titile_layout_ry" >
+
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:background="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="ImageButton"
+        android:textColor="#b3000d"
+        android:textSize="26dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+</RelativeLayout>

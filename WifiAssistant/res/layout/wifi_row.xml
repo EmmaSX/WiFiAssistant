@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:background="@drawable/row_select_list_style"
+        android:clickable="false" >
+
+        <!-- 每一行开始的图片 -->
+
+        <ImageView
+            android:id="@+id/wifi_img_looks"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/wifi_looks" />
+        <!--  修改wifi图片即可 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/wifi_img_looks"
+            android:orientation="vertical" >
+
+            <!-- 每行的WiFi显示 -->
+
+            <TextView
+                android:id="@+id/SSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SSID"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lockStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lockStatus"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="10dip" />
+        </LinearLayout>
+        <!-- 箭头图片 -->
+
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/wifi_index_arrow" />
+    </RelativeLayout>
+
+    
+
+</LinearLayout>
