@@ -28,9 +28,11 @@
             android:layout_height="60dip"
             android:text="当前位置"
             android:textColor="@android:color/secondary_text_light"
-            android:background="@drawable/default_pic" />
+            android:background="@drawable/default_pic"
+         />
+        
 
-        <!--  <include layout="@layout/home_wifistatus_layout" /> -->
+        <include layout="@layout/home_wifistatus_layout" />
     </RelativeLayout>
 
     <!-- 免费连接WiFi -->
