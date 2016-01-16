@@ -26,13 +26,10 @@
             android:id="@+id/gps"
             android:layout_width="match_parent"
             android:layout_height="60dip"
-            android:text="当前位置"
+            android:text="@string/location"
             android:textColor="@android:color/secondary_text_light"
             android:background="@drawable/default_pic"
          />
-        
-
-        <include layout="@layout/home_wifistatus_layout" />
     </RelativeLayout>
 
     <!-- 免费连接WiFi -->
@@ -47,7 +44,7 @@
             android:layout_width="200dip"
             android:layout_height="wrap_content"    
             android:gravity="center_vertical|left"
-            android:text="免费WiFi"
+            android:text="已为您推荐WiFi"
             android:textColor="#FFFFFF"
             android:textSize="16dip"
             android:textStyle="bold"

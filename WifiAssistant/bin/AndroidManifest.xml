@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity android:name="Detailwifi" ></activity> 
+         <activity android:name="Detailwifi" ></activity>
          <!-- 加入使用的library -->
 	<uses-library android:name="com.google.android.maps"/>
     </application>

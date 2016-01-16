@@ -84,6 +84,7 @@ public class Detailwifi extends Activity {
 		});
 	}
 
+	//连接对话框
 	private void dialog() {
 		dialogWifi = new DialogWifi(this, R.style.dialog_wifi, wifiname);
 		EditText editText = (EditText) dialogWifi.getEditText();// 方法在CustomDialog中实现
